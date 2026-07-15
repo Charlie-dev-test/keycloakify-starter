@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+    --kg-accent: #f26522;
+    --kg-text: #1a1a1a;
+    --kg-text-muted: #6b7280;
+    --kg-border: #d1d5db;
+    --kg-button-bg: #2d2d2d;
+    --kg-button-hover: #1a1a1a;
+    --kg-card-bg: #ffffff;
+    --kg-page-bg: #ffffff;
+    --kg-input-bg: #ffffff;
+    --kg-error: #dc2626;
+    --kg-radius: 8px;
+}
+
+html.kcHtmlClass,
+body.kcBodyClass {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    color: var(--kg-text);
+    background: var(--kg-page-bg);
+}
+
+.kcLoginClass {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.kcFormCardClass {
+    width: 100%;
+    max-width: 420px;
+    background: var(--kg-card-bg);
+    border: 1px solid var(--kg-border);
+    border-radius: var(--kg-radius);
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.kcFormHeaderClass {
+    margin-bottom: 24px;
+}
+
+.kg-brand {
+    margin-bottom: 24px;
+}
+
+.kg-brand-logo {
+    width: 144px;
+    height: 54px;
+    object-fit: contain;
+}
+
+#kc-page-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--kg-text);
+}
+
+.kcFormGroupClass {
+    margin-bottom: 16px;
+}
+
+.kcLabelClass {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--kg-text);
+}
+
+.kcInputClass {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--kg-text);
+    background: var(--kg-input-bg);
+    border: 1px solid var(--kg-border);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.kcInputClass:focus {
+    border-color: #9ca3af;
+}
+
+.kcInputClass[aria-invalid="true"] {
+    border-color: var(--kg-error);
+}
+
+.kcInputGroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.kcInputGroup .kcInputClass {
+    padding-right: 44px;
+}
+
+.kcFormPasswordVisibilityButtonClass {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--kg-text-muted);
+    cursor: pointer;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.kcFormPasswordVisibilityButtonClass:hover {
+    color: var(--kg-text);
+    background: #f3f4f6;
+}
+
+.kcFormPasswordVisibilityButtonClass:focus-visible {
+    outline: 2px solid #9ca3af;
+    outline-offset: 1px;
+}
+
+.kcFormPasswordVisibilityButtonClass svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+.kcInputErrorMessageClass {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--kg-error);
+}
+
+.kcFormSettingClass {
+    display: none;
+}
+
+#kc-form-buttons {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.kcButtonClass {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    border: none;
+    border-radius: var(--kg-radius);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.kcButtonPrimaryClass {
+    color: #ffffff;
+    background: var(--kg-button-bg);
+}
+
+.kcButtonPrimaryClass:hover:not(:disabled) {
+    background: var(--kg-button-hover);
+}
+
+.kcButtonPrimaryClass:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.kcButtonBlockClass {
+    width: 100%;
+}
+
+.kcButtonLargeClass {
+    padding: 14px 20px;
+}
+
+.kg-forgot-password {
+    margin-top: 16px;
+}
+
+.kg-forgot-password a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--kg-accent);
+    text-decoration: none;
+}
+
+.kg-forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.kcAlertClass {
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.alert-error,
+.pf-m-danger {
+    color: var(--kg-error);
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+}
+
+.alert-success {
+    color: #166534;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+}
+
+.alert-warning {
+    color: #92400e;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+}
+
+.alert-info {
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+#kc-social-providers {
+    margin-top: 24px;
+}
+
+#kc-social-providers hr {
+    border: none;
+    border-top: 1px solid var(--kg-border);
+    margin: 0 0 16px;
+}
+
+#kc-social-providers h2 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--kg-text-muted);
+}
