@@ -24,7 +24,7 @@ export const DefaultRu: Story = {
                     currentLanguageTag: "ru"
                 },
                 login: {
-                    username: "y.pirogov@icloud.com"
+                    username: "test@test.com"
                 }
             }}
         />
